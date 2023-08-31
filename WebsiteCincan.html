@@ -249,7 +249,13 @@
     <script>
         
         var audioContext = new AudioContext();
-
+        
+        var music = "img/Kikis Delivery Service  Umi No Mieru Machi Piano.mp3";
+        var audio = new Audio(music);
+        audio.loop = true;
+        audio.autoplay = true;
+        audio.play();
+        
         document.querySelector('#playButton').addEventListener('click', function() {
             if (audioContext.state === 'suspended'){
                 audioContext.resume().then(() => {
