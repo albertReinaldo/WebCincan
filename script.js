@@ -19,7 +19,7 @@ window.onscroll = function() {
 
 
 function wa(isi) {
-    window.open("https://api.whatsapp.com/send?text= Di hari ulang tahun ini, cincan mau " + isi);
+    window.open("https://wa.me/6281807906062?text= Di hari ulang tahun ini, cincan mau " + isi);
 }
 async function tanya() {
     var { value: kado } = await swal.fire({ title: "Cincan mau apa di ulang tahun Cincan?", input: "text", showCancelButton: false, });
